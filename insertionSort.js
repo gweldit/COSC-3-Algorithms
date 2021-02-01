@@ -26,7 +26,11 @@ class InsertionSort{
 }
 
 function main(){
-    let arr = [12,30,11,30,45,1,3,0,13,90];
+    let arr = []
+    let lengthOfArr = 100
+    for (let i = 0; i < lengthOfArr; i++){
+        arr.push(Math.floor(Math.random() *lengthOfArr +1));
+    }
 
     let inSort = new InsertionSort(arr);
     inSort.sort(arr);
